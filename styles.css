@@ -1,0 +1,205 @@
+
+:root{
+  --blue: #3977aa;
+
+}
+
+
+body {
+  font-family: "Reddit Sans", sans-serif;;
+  margin: 0;
+  color: white;
+}
+
+header {
+  background: linear-gradient( #000000, #1d2730, #0b5897 );
+}
+
+header nav {
+  padding: 30px 5% 0 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav h1{
+  margin: 0;
+  color: var(--blue);
+  text-transform: uppercase;
+}
+
+header nav .right {
+  display: flex;
+  align-items: center;
+}
+
+header nav .right p{
+  margin: 0 15px 0 0;
+  color: #ccc;
+}
+
+header nav .right p:hover {
+  color: white;
+}
+
+header nav .right button{
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 1px solid var(--blue);
+  border-radius: 5px;
+  color: var(--blue);
+  cursor: pointer;
+  transition: color 0.5s; background-color: 0.5s;
+
+}
+
+header nav .right button:hover{
+  color: inherit;
+  background-color: var(--blue);
+}
+
+
+.presentation {
+  padding: 30px 5%;
+  margin-top: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.presentation .product-presentation { 
+  width: 100%;
+  flex-shrink: 3;
+}
+
+.presentation .product-presentation h1 {
+  margin: 0;
+  font-size: 4vw;
+  width: 80%;
+}
+
+.presentation .product-presentation p{
+  font-weight: 300;
+  color: #e9e9e9;
+}
+
+.presentation .product-presentation button {
+  margin-top: 20px;
+  padding: 15px 20px;
+  font-size: 18px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.presentation .image-presentation{
+  justify-content: flex-end;
+  margin: 50px;
+}
+
+.presentation .image-presentation img{
+  max-width: 100%;
+  width: auto;
+  border: 3px solid var(--blue);
+  margin: 0 15px 15px 0;
+  box-shadow: 0px 0px  30px var(--blue);
+
+
+}
+
+
+.first .product-presentation button {
+  background-color: var(--blue);
+  color: white;
+  border: 1px solid var(--blue);
+
+}
+
+.first .product-presentation button:hover {
+  background-color: inherit;
+  border: 1px solid var(--blue);
+  color: var(--blue);
+}
+
+.first .product-presentation .small-image {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.first .product-presentation .small-image .small {
+  padding: 0%;
+  margin: 0 15px 15px 0;
+  border-radius: 20px;
+}
+
+.first .product-presentation .small-image .small img {
+  width: 120px;
+}
+
+
+.second {
+  background: linear-gradient( #0b5897, #1d2730,  #000000 );
+  margin: 0;
+}
+
+.second .emplois {
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 40px 5%;
+}
+
+.second .emplois .bloctext {
+  flex: 3;
+  background-color: #1d2730;
+  padding: 20px;
+  border-radius: 5px;
+  color: white;
+  box-shadow: 0px 0px  50px var(--blue);
+}
+
+hr{
+  color: #000000;
+}
+
+@media screen and (max-width: 730px) {
+	nav .right p {
+		display: none;
+	}
+  
+}
+
+hr.separator {
+  border: none;
+  height: 2px;
+  background: var(--blue);
+  margin: 0 5%;
+  opacity: 0.3;
+  }
+
+.third {
+  background: linear-gradient(  #000000, #1d2730, #0b5897  );
+  margin: 0;
+}
+
+.third .emplois {
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 40px 5%;
+}
+
+.third .emplois .bloctext {
+  flex: 3;
+  background-color: #1d2730;
+  padding: 20px;
+  border-radius: 5px;
+  color: white;
+  box-shadow: 0px 0px  50px var(--blue);
+}
