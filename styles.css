@@ -5,16 +5,21 @@
 }
 
 a {
-  color: var(--blue);           
-  text-decoration: none;        
-  transition: color 0.3s ease;  
+  color: inherit;
+  text-decoration: none;
 }
 
+/* Pour les titres cliquables */
+h1 a, h2 a, h3 a {
+  color: inherit;
+  text-decoration: none;
+}
 
+/* Effet au survol */
 a:hover {
-  color: white;
-  text-decoration: underline;  
-
+  color: var(--blue); /* ou une autre couleur de ton thème */
+  text-decoration: underline;
+}
 
 body {
   font-family: "Reddit Sans", sans-serif;;
