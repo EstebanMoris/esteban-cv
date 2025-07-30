@@ -4,6 +4,17 @@
 
 }
 
+a {
+  color: var(--blue);           
+  text-decoration: none;        
+  transition: color 0.3s ease;  
+}
+
+
+a:hover {
+  color: white;
+  text-decoration: underline;  
+
 
 body {
   font-family: "Reddit Sans", sans-serif;;
