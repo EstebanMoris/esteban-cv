@@ -4,15 +4,6 @@
 
 }
 
-a, a:visited {
-  color: inherit !important;
-  text-decoration: none !important;
-}
-
-a:hover {
-  color: var(--blue);
-  text-decoration: underline; /* ou none si tu préfères sans surlignage */
-}
 
 body {
   font-family: "Reddit Sans", sans-serif;;
@@ -176,78 +167,14 @@ hr{
   color: #000000;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 730px) {
+	nav .right p {
+		display: none;
 
-  /* NAVIGATION : Masquer le menu texte, centrer bouton */
-  nav {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  nav .right {
-    width: 100%;
-    justify-content: space-between;
-    margin-top: 15px;
-  }
-
-  nav .right p {
-    display: none;
-  }
-
-  nav .right button {
-    width: 100%;
-    text-align: center;
-  }
-
-  /* PRESENTATION : Passer en colonne */
-  .presentation {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .presentation .product-presentation,
-  .presentation .image-presentation {
-    width: 100%;
-    margin: 20px 0;
-  }
-
-  .presentation .product-presentation h1 {
-    font-size: 6vw;
-    width: 100%;
-  }
-
-  .first .product-presentation .small-image {
-    justify-content: center;
-  }
-
-  /* IMAGE */
-  .presentation .image-presentation {
-    display: flex;
-    justify-content: center;
-    margin: 0;
-  }
-
-  .presentation .image-presentation img {
-    width: 70%;
-    margin: 0 auto;
-  }
-
-  /* EMPLOIS : Empiler les blocs */
-  .second .emplois,
-  .third .emplois {
-    flex-direction: column;
-    padding: 20px 5%;
-  }
-
-  .second .emplois .bloctext,
-  .third .emplois .bloctext {
-    width: 100%;
-    flex: 1;
-  }
-
+    
+	}
+  
 }
-
 hr.separator {
   border: none;
   height: 2px;
