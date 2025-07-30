@@ -3,12 +3,20 @@
   --blue: #3977aa;
 
 }
-
-
+html {
+  scroll-behavior: smooth;
+  }
+  
+a { 
+  color: var(--blue);
+  text-decoration: none;
+  text-shadow:2px 2px 5px black
+}
 body {
   font-family: "Reddit Sans", sans-serif;;
   margin: 0;
   color: white;
+  
 }
 
 header {
@@ -27,7 +35,7 @@ header nav h1{
   margin: 0;
   color: var(--blue);
   text-transform: uppercase;
-  font-size: 25px;
+  font-size: 50px;
 }
 
 header nav .right {
@@ -76,7 +84,7 @@ header nav .right button:hover{
 
 .presentation .product-presentation h1 {
   margin: 0;
-  font-size: 4vw;
+  font-size: 2.5vw;
   width: 80%;
 }
 
@@ -102,7 +110,7 @@ header nav .right button:hover{
 
 .presentation .image-presentation img{
   max-width: 100%;
-  width: auto;
+  width: 300px;
   border: 3px solid var(--blue);
   margin: 0 15px 15px 0;
   box-shadow: 0px 0px  30px var(--blue);
@@ -176,6 +184,7 @@ hr{
 	}
   
 }
+
 hr.separator {
   border: none;
   height: 2px;
